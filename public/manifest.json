@@ -1,0 +1,13 @@
+{
+  "name": "you-special",
+  "short_name": "You Special",
+  "description": "Safe, women-only two-wheeler rides",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0720",
+  "theme_color": "#6B21A8",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
