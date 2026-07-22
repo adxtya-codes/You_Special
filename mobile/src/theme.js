@@ -50,7 +50,9 @@ export const colors = {
   bgWhite:     '#FFFFFF',
   bgDark:      '#111111',
   bgDark2:     '#222222',
+  purple800:   '#1A0A1F',  // deep plum (used in gradients)
   purple700:   '#111111',
+  purple600:   '#333333',
   purple500:   '#FFD4E9',
   purple400:   '#F4B8D8',
   purple300:   '#FFD4E9',

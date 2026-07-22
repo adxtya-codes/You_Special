@@ -4,7 +4,7 @@ import { LinearGradient } from 'expo-linear-gradient';
 import { useAuth } from '../../context/AuthContext';
 import { useRide } from '../../context/RideContext';
 import { colors, radius, typography } from '../../theme';
-import { Avatar, GlassCard, Badge } from '../../components/SharedComponents';
+import { Avatar, GlassCard, Badge, SecondaryButton } from '../../components/SharedComponents';
 import { mockDrivers } from '../../data/mockData';
 
 export default function Dashboard({ navigation }) {
