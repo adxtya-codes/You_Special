@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {
   StyleSheet, View, Text, TextInput, TouchableOpacity,
-  ScrollView, Dimensions, ActivityIndicator, Platform, StatusBar,
+  ScrollView, Dimensions, ActivityIndicator, Platform, StatusBar, Image,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useAuth } from '../../context/AuthContext';
@@ -51,7 +51,11 @@ export default function Home({ navigation }) {
         {/* Top bar — app badge only */}
         <View style={styles.topBar}>
           <View style={styles.appBadge}>
-            <Ionicons name="bicycle" size={16} color={colors.white} style={{ marginRight: 6 }} />
+            <Image
+              source={require('../../../assets/logo.png')}
+              style={{ width: 22, height: 22, borderRadius: 5, marginRight: 6 }}
+              resizeMode="contain"
+            />
             <Text style={styles.appBadgeText}>You Special</Text>
           </View>
         </View>

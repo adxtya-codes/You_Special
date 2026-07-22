@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import {
   StyleSheet, View, Text, TouchableOpacity,
-  Dimensions, StatusBar, Platform, Animated,
+  Dimensions, StatusBar, Platform, Animated, Image,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { colors, radius, shadow } from '../theme';
@@ -39,7 +39,11 @@ export default function Landing({ navigation }) {
           {/* Brand row */}
           <View style={styles.brandRow}>
             <View style={styles.logoBox}>
-              <Ionicons name="bicycle" size={26} color={colors.black} />
+              <Image
+                source={require('../../assets/logo.png')}
+                style={{ width: 34, height: 34, borderRadius: 8 }}
+                resizeMode="contain"
+              />
             </View>
             <Text style={styles.brandName}>You Special</Text>
           </View>

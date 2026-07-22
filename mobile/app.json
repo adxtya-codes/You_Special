@@ -4,7 +4,12 @@
     "slug": "you-special",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/logo.png",
+    "splash": {
+      "image": "./assets/logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1A0A1F"
+    },
     "scheme": "youspecial",
     "userInterfaceStyle": "light",
     "ios": {
@@ -24,6 +29,10 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [],
-    "extra": {}
+    "extra": {
+      "eas": {
+        "projectId": "a6662b04-f731-4f71-bdc8-708757a5b5fe"
+      }
+    }
   }
 }

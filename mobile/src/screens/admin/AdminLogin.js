@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, View, Text, TextInput, TouchableOpacity, ScrollView, KeyboardAvoidingView, Platform } from 'react-native';
+import { StyleSheet, View, Text, TextInput, TouchableOpacity, ScrollView, KeyboardAvoidingView, Platform, Image } from 'react-native';
 import { useAuth } from '../../context/AuthContext';
 import { colors, radius, typography } from '../../theme';
 import { PrimaryButton, GlassCard } from '../../components/SharedComponents';
@@ -26,7 +26,11 @@ export default function AdminLogin({ navigation }) {
       <ScrollView contentContainerStyle={styles.scrollContainer}>
         <View style={styles.content}>
           <View style={{ alignItems: 'center', marginBottom: 32 }}>
-            <Text style={{ fontSize: 56 }}>🔒</Text>
+            <Image
+              source={require('../../../assets/logo.png')}
+              style={{ width: 64, height: 64, borderRadius: 16 }}
+              resizeMode="contain"
+            />
             <Text style={[typography.displaySm, { color: 'white', marginTop: 16, marginBottom: 6 }]}>Admin Portal</Text>
             <Text style={{ color: colors.gray400, fontSize: 13 }}>You Special Control Center</Text>
           </View>

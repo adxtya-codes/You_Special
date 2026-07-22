@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import {
-  View, Text, StyleSheet, Animated, StatusBar, Easing, Platform,
+  View, Text, StyleSheet, Animated, StatusBar, Easing, Platform, Image,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useAuth } from '../context/AuthContext';
@@ -182,7 +182,11 @@ export default function SplashScreen({ navigation }) {
             { transform: [{ scale: logoScale }], opacity: logoOpacity },
           ]}
         >
-          <Ionicons name="bicycle" size={40} color="#1A0A1F" />
+          <Image
+            source={require('../../assets/logo.png')}
+            style={{ width: 72, height: 72, borderRadius: 18 }}
+            resizeMode="contain"
+          />
         </Animated.View>
 
         {/* Brand name */}

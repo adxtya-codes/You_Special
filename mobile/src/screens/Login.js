@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import {
   StyleSheet, View, Text, TextInput, TouchableOpacity,
-  KeyboardAvoidingView, Platform, ScrollView, StatusBar,
+  KeyboardAvoidingView, Platform, ScrollView, StatusBar, Image,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { useAuth } from '../context/AuthContext';
@@ -45,7 +45,11 @@ export default function Login({ navigation }) {
           <Ionicons name="arrow-back" size={20} color={colors.black} />
         </TouchableOpacity>
         <View style={styles.logoRow}>
-          <Ionicons name="bicycle" size={18} color={colors.black} />
+          <Image
+            source={require('../../assets/logo.png')}
+            style={{ width: 24, height: 24, borderRadius: 5 }}
+            resizeMode="contain"
+          />
           <Text style={styles.logoText}>You Special</Text>
         </View>
         <View style={{ width: 40 }} />
